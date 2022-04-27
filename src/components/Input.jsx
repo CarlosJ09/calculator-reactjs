@@ -1,6 +1,8 @@
-const Input = ({ input }) => (
-    <div className='input'>
-        {input}
+import '../stylesheets/Input-Clear.css'
+
+const Input = ({ screen }) => (
+    <div className='Input'>
+        {screen}
     </div>
 );
 

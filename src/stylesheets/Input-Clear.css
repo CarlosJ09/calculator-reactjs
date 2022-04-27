@@ -1,0 +1,36 @@
+.Input {
+    height: 75px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #0a0a23;
+    color: #fff;
+    padding: 11px 30px 11px 11px;
+    margin: 1px solid #888;
+    box-shadow: -1px 4px 1px 1px #fff;
+}
+
+.clear-button {
+    height: 70px;
+    border-radius: 40px;
+    margin: 10px 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.6em;
+    background-color: #ac0246;
+    color: #fff;
+    border: 2px solid #fff;
+    margin: 1px solid #888;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: #ebb000;
+}
