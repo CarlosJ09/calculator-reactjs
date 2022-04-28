@@ -8,6 +8,8 @@ function App() {
 
   const [input, setInput] = useState('');
 
+  console.log('Hola moye mosa');
+
   const addInput = val => {
     setInput(input + val);
   }
