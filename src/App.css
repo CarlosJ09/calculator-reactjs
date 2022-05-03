@@ -4,9 +4,15 @@
     padding: 0;
 }
 
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 .App {
     height: 100vh;
     background-color:darkslategray;
+    background-size: cover;
     font-family: Lato, sans-serif;
     display: flex;
     flex-wrap: wrap;

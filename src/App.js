@@ -3,15 +3,23 @@ import Button from './components/button.jsx'
 import Input from './components/Input.jsx'
 import Clear from './components/Clear.jsx'
 import { useState } from 'react'
+import { evaluate } from 'mathjs'
 
 function App() {
 
   const [input, setInput] = useState('');
 
-  console.log('Hola moye mosa');
-
   const addInput = val => {
     setInput(input + val);
+  }
+
+  const result = () => {
+    if(input){
+      setInput(evaluate(input));
+    }
+    else{
+      setInput('');
+    }
   }
 
   return (
@@ -37,13 +45,15 @@ function App() {
           <Button manageClick={addInput}>*</Button>
         </div>
         <div className='fila'>
-          <Button manageClick={addInput}>=</Button>
+          <Button manageClick={result}>=</Button>
           <Button manageClick={addInput}>0</Button>
           <Button manageClick={addInput}>.</Button>
           <Button manageClick={addInput}>/</Button>
         </div>
         <div className='fila'>
-          <Clear>Clear</Clear>
+          <Clear manageClear = {() => setInput('')}>
+            Clear
+          </Clear>
         </div>
       </div>
     </div>
